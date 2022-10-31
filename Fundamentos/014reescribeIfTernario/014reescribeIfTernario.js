@@ -6,6 +6,8 @@ if (a + b < 4) {
 } else {
   result = 'Sube los zapatos';
 }*/
+"use strict";
+
 let result;
 let a = 1;
 let b = 5;

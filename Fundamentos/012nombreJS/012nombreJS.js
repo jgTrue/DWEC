@@ -3,7 +3,7 @@
 entonces muestra: “¡Correcto!”, de lo contrario muestra: “¿No lo sabes? 
 ¡ECMAScript!”*/
 
-"use stric";
+"use strict";
 
 let nombreOficial = "ECMAScript"
 

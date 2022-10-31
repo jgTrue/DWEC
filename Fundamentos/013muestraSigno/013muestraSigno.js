@@ -5,7 +5,7 @@ obtenga a través de un prompt un número y entonces muestre en un alert:
  0, si es igual a cero.
 En la tarea asumimos que siempre el usuario introduce un número.*/
 
-"use stric";
+"use strict";
 
 let inputUser = Number(prompt("Introduzca un número")); //*Almacenamos como numero el imput del usuario
 
