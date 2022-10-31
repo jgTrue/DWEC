@@ -14,10 +14,10 @@ undefined == null //? null devuelve false y una variable undefined también, por
 undefined === null //? Son iguales pero no identicos, por lo que delvorverá false
                 //* Resultado -> False
 
-null == "\n0\n" //? null y 0 si son iguales, pero el string  "\n0\n" no es 0, es un string con dos saltos de linea por lo que no son iguales.
+null == "\n0\n" //? null tiene un tratamiento especial al usar '==', es 0, pero al compararlo con un número no son iguales, por lo que no son iguales.
                 //* Resultado -> False
 
-null === +"\n0\n" //? null no es idéntico que +"\n0\n" por lo que delvorverá false
+null === +"\n0\n" //? null no es idéntico que +"\n0\n", tiene un tratamiento similar al del ejemplo anterior, por lo que delvorverá false
                 //* Resultado -> False
 */
 
