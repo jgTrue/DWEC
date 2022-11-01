@@ -76,6 +76,7 @@ for (let numero = n; numero > 1; numero--) {
 */
 /*
 *Hallar números primos bucles foreach
+!No se pedía pero lo hice igualmente.
 let numeros = Array.from({length:n}, (v, i) => i+1);
 numeros.sort((a, b) => b - a);
 
