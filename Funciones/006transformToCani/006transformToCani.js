@@ -6,7 +6,7 @@ que alternar el uso de MAYÚSCULAS y minúsculas, sustituir la letra C por la K 
 tres letras H al final. 
 */
 
-let frase = "escribe una función que transforme una cadena en cani, hecho.";
+let frase = "Una cadena cani como esta";
 
 function cadenaCani(frase) {
     let arrayFrase = frase.split("");
@@ -14,18 +14,22 @@ function cadenaCani(frase) {
     
     for (let i=0; i < arrayFrase.length; i++) { 
 
-        if(64 < arrayFrase[i].charCodeAt() && arrayFrase[i].charCodeAt() < 91 && (i % 2) != 0 && arrayFrase[i] != null){
-            //Comprueba que sea mayúscula en una posición impar, además que no este vacia la posición.
-            arrayFrase[i] = toLowerCase(arrayFrase[i]);
-            if(arrayFrase[i].charCodeAt() == 67 || arrayFrase[i].charCodeAt() == 99 ){
-                arrayFrase[i] = "ks"; //!No funciona bien
+        if((i % 2) != 0 && arrayFrase[i] != null && arrayFrase[i] != " "){
+            //Comprueba que sea una posición impar, además que no este vacia la posición ó sea espacio.
+            
+            if(arrayFrase[i] == "c" || arrayFrase[i] == "C" ){
+                arrayFrase[i] = "k";
+            }else{
+                arrayFrase[i] = arrayFrase[i].toLowerCase();
             }
         }
-        else if((96 < arrayFrase[i].charCodeAt() && arrayFrase[i].charCodeAt() < 123 && (i % 2) == 0 && arrayFrase[i] != null)){
-            //Comprueba que sea minúscula en una posición par, además que no este vacia la posición.
-            arrayFrase[i] = arrayFrase[i].toUpperCase();
-            if(arrayFrase[i].charCodeAt() == 67 || arrayFrase[i].charCodeAt() == 99){
-                arrayFrase[i] = "K"; //!No funciona bien
+        else if(((i % 2) == 0 && arrayFrase[i] != null && arrayFrase[i] != " ")){
+            //Comprueba que sea una posición par, además que no este vacia la posición ó sea espacio.
+           
+            if(arrayFrase[i] == "c" || arrayFrase[i] == "C"){
+                arrayFrase[i] = "K";
+            }else{
+                arrayFrase[i] = arrayFrase[i].toUpperCase();
             }
         }
     }
@@ -34,9 +38,7 @@ function cadenaCani(frase) {
         (letter != null) ? newFrase += letter : newFrase += " ";
     });
     
-    return newFrase;  
+    return newFrase+"HHH";  
 }
-let text = "Avs"
-
 
 alert(cadenaCani(frase)) ;
