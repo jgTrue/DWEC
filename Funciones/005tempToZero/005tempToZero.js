@@ -11,7 +11,7 @@ temporizador(2,50); // le pasamos 2 minutos y 50 segundos
 "use strict";
 
 
-temporizador(5);
+temporizador(3);
 
 function temporizador(min = 0, seg = null){
     //Si la función solo recibe un parámetro(min), lo pasará como si recibiera segundos
