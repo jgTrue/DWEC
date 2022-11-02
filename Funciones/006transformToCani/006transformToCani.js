@@ -5,6 +5,7 @@ cani es como ésta" obtendremos "UnA KaDeNa kAnI Es kOmO EsTaHHH". Para ello, ha
 que alternar el uso de MAYÚSCULAS y minúsculas, sustituir la letra C por la K y añadir 
 tres letras H al final. 
 */
+"use strict";
 
 let frase = "Una cadena cani como esta";
 
