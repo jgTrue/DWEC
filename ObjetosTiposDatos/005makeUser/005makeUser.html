@@ -1,0 +1,26 @@
+<!-- 
+Aquí la función makeUser devuelve un objeto. ¿Cuál es el 
+resultado de acceder a su atributo ref? ¿Por qué?
+function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+}
+let user = makeUser();
+alert( user.ref.name ); // ¿Cuál es el resultado? 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="005makeUser.js" type="text/javascript"></script>
+</head>
+<body>
+    
+</body>
+</html>
